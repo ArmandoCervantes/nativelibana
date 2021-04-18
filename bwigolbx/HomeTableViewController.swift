@@ -28,7 +28,7 @@ class HomeTableViewController: UITableViewController {
     override func viewDidLoad() {
         let httx = HttpCte.init()
         
-        let resp = httx.getReq()
+        let resp = httx.getReq
 
         print("First Controller Loaded\(String(describing: resp))")
     }

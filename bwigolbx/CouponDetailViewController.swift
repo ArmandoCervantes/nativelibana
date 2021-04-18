@@ -7,9 +7,22 @@
 import UIKit
 import Foundation
 
+
 class CouponDetailViewController: UIViewController {
 
+    @IBOutlet weak var menuCollectionView: UICollectionView!
+    @IBOutlet weak var destacadosCollectionView: UICollectionView!
+    @IBOutlet weak var recomendadosCollectionView: UICollectionView!
     
+    var couponsRecomendados: [LovRecomendados] = []
+    var couponsDestacados: [LovRecomendados] = []
+    
+    let menuCollectionViewIdentifier = "MenuItem"
+    let destacadosCollectionViewIdentifier = "DestacadoItem"
+    let recomendadosCollectionViewIdentifier = "RecomendadoItem"
+    
+    
+    var couponId = 0
 
     var coupon: LovRecomendados?
     
